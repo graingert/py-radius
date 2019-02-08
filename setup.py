@@ -1,31 +1,16 @@
-#!/bin/env python
-
-from distutils.core import setup
-import radius
-
-name = 'py-radius'
-version = radius.__version__
-release = '1'
-versrel = version + '-' + release
-download_url = 'https://github.com/downloads/btimby/' + name + \
-                           '/' + name + '-' + versrel + '.tar.gz'
-
-with open('LICENSE', 'r') as l:
-    license = l.read()
+from setuptools import setup
 
 setup(
-    name = name,
-    version = versrel,
+    name = 'radius',
+    version = '0.0.0',
     description = 'RADIUS authentication module',
     long_description = 'A pure Python module that implements client side RADIUS ' \
                        'authentication, as defined by RFC2865.',
     author = 'Stuart Bishop',
     author_email = 'zen@shangri-la.dropbear.id.au',
-    maintainer = 'Ben Timby',
-    maintainer_email = 'btimby@gmail.com',
-    url = 'http://github.com/btimby/' + name + '/',
-    download_url = download_url,
-    license = license,
+    maintainer = 'Thomas Grainger',
+    maintainer_email = 'radius@graingert.co.uk',
+    url = 'http://github.com/graingert/py-radius',
     py_modules = ["radius"],
     classifiers = [
         'License :: OSI Approved :: MIT License',
