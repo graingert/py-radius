@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = 'radius',
-    version = '0.0.0',
+    version = '0.0.1',
     description = 'RADIUS authentication module',
     long_description = 'A pure Python module that implements client side RADIUS ' \
                        'authentication, as defined by RFC2865.',
